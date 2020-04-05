@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="add miniprogram.">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+    <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ponyxiao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585222447157</updated>
       <workItem from="1585222448693" duration="4122000" />
-      <workItem from="1586048606943" duration="5490000" />
+      <workItem from="1586048606943" duration="7371000" />
     </task>
     <task id="LOCAL-00001" summary="create project.">
       <created>1585223875331</created>
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586074141773</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test program.">
+      <created>1586090427844</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586090427844</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +201,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project." />
     <MESSAGE value="add miniprogram." />
-    <option name="LAST_COMMIT_MESSAGE" value="add miniprogram." />
+    <MESSAGE value="test program." />
+    <option name="LAST_COMMIT_MESSAGE" value="test program." />
   </component>
 </project>

@@ -4,9 +4,14 @@
 namespace App\Http\Controllers;
 
 
+use Illuminate\Support\Facades\DB;
+
 class IndexController
 {
     public function index(){
-        return 'I am superhero!';
+        $result = DB::table('user')->get();
+
+        return $result;
+
     }
 }

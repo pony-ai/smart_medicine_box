@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="notice">
+    <view class="notice_desc">
+      <text>我是待提醒记录1</text>
+    </view>
+    <view class="notice_desc">
+      <text>我是待提醒记录2</text>
+    </view>
+  </view>
+  <view class="mianban">  
+    <view class="press_data">
+      <text>压力数据</text>
+    </view>
+    <view class="control_data">
+      <view>
+        <text>我是控制指令</text>
+      </view>
+    </view>
+  </view>
+</view>

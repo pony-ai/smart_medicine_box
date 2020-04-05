@@ -1,0 +1,9 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view class="profile">
+    <text>这里是个人信息</text>
+  </view>
+  <view class="records">
+    <text>这里是服药记录</text>
+  </view>
+</view>

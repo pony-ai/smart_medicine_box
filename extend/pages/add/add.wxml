@@ -1,4 +1,4 @@
 <!--pages/add/add.wxml-->
 <view class="add">
-  <text>添加药品</text>
+  <button class="scanCode" bindtap="scanCode">绑定药仓</button>
 </view>

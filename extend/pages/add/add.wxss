@@ -1,1 +1,17 @@
 /* pages/add/add.wxss */
+/* 底部按钮 */
+.add{
+}
+.scanCode {
+  font-size: 39rpx;
+  background: #000000;
+  bottom: 35rpx;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  
+  color: #fff;
+  margin-top:400rpx;
+  z-index:999;
+}

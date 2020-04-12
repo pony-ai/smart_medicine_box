@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ponyxiao.xml" afterDir="false" />
+    <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="database connection.">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MedicineController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/extend/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.json" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/extend/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +139,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiaoe_admin" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -156,7 +170,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585222447157</updated>
       <workItem from="1585222448693" duration="4122000" />
-      <workItem from="1586048606943" duration="7371000" />
+      <workItem from="1586048606943" duration="9291000" />
+      <workItem from="1586657269749" duration="3013000" />
     </task>
     <task id="LOCAL-00001" summary="create project.">
       <created>1585223875331</created>
@@ -179,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586090427844</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="database connection.">
+      <created>1586101615219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586101615219</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +224,7 @@
     <MESSAGE value="create project." />
     <MESSAGE value="add miniprogram." />
     <MESSAGE value="test program." />
-    <option name="LAST_COMMIT_MESSAGE" value="test program." />
+    <MESSAGE value="database connection." />
+    <option name="LAST_COMMIT_MESSAGE" value="database connection." />
   </component>
 </project>

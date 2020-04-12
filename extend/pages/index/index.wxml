@@ -1,20 +1,20 @@
 <!--index.wxml-->
 <view class="container">
   <view class="notice">
+  <label>待提醒</label>
+  <block wx:for="{{medicineData}}" wx:for-item="medicine" wx:for-index="idx">
     <view class="notice_desc">
-      <text>我是待提醒记录1</text>
+      <text>{{medicine.date}} {{medicine.mediName}} {{medicine.box}}</text>
     </view>
-    <view class="notice_desc">
-      <text>我是待提醒记录2</text>
-    </view>
+  </block>
   </view>
   <view class="mianban">  
     <view class="press_data">
-      <text>压力数据</text>
+      <label>药仓状态</label>
     </view>
     <view class="control_data">
       <view>
-        <text>我是控制指令</text>
+        <label>控制指令</label>
       </view>
     </view>
   </view>

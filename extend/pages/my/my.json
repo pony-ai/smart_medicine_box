@@ -1,3 +1,9 @@
 {
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "i药箱",
+    "navigationBarTextStyle": "black"
+  },
   "usingComponents": {}
 }

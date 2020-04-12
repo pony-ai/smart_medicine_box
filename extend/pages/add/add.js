@@ -5,9 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    scanData:{
+      result:null,
+      type:null,
+    }
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -62,5 +64,18 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  scanCode: function () {
+    var myThis = this;
+    wx.navigateTo({
+      url: './addMedicine/addMedicine'
+    })
+    // wx.scanCode({
+    //   success: function (res) {
+    //     wx.navigateTo({
+    //       url: './addMedicine/addMedicine?box=' + res.result
+    //     })
+    //   },
+    // })
   }
 })

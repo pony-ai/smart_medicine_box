@@ -4,7 +4,7 @@
 namespace App\Http\Controllers;
 
 
-class MedicineController extends Controller
+class MedicineController
 {
     public function addMedicine(){
         $mData = $_POST;

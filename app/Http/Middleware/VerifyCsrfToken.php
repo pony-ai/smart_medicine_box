@@ -13,5 +13,6 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        'https://xiaoqtc.cn/index.php/medicine/add',
     ];
 }

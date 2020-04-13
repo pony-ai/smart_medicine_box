@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 class IndexController
 {
-    public function index(){
+    public function index()
+    {
         $result = DB::table('user')->get();
 
         return $result;

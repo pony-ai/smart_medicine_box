@@ -8,6 +8,6 @@ class MedicineController
 {
     public function addMedicine(){
         $mData = $_POST;
-        var_dump($mData);
+        return json_encode('send success');
     }
 }

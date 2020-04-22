@@ -1,17 +1,25 @@
 /* pages/add/add.wxss */
 /* 底部按钮 */
-.add{
+.medicine{
+  margin-bottom: 40rpx;
+  border-bottom-style: solid;
+  border-bottom-color: #000000
+}
+.add_btn{
+  width: 100%;
+  position: fixed;
+  bottom: 30rpx;
 }
 .scanCode {
+  /* position: fixed; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  bottom: 35rpx;
   font-size: 39rpx;
   background: #000000;
-  bottom: 35rpx;
-  display: flex;
-  align-items: center;
   width: 90%;
-  justify-content: center;
   
   color: #fff;
-  margin-top:400rpx;
-  z-index:999;
+  /* z-index:-1; */
 }

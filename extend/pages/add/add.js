@@ -1,4 +1,5 @@
 // pages/add/add.js
+const app = getApp();
 Page({
 
   /**
@@ -8,13 +9,37 @@ Page({
     scanData:{
       result:null,
       type:null,
-    }
+    },
+    mData:[
+      {
+        id: 1,
+        mName: "阿莫西林胶囊",
+        cate: 1,
+        indications: "消炎",
+        attention: "无",
+        mDoes: "2,1,1",
+        effectiveDate: "2021-01-01 00:00:00",
+        producers: "哈尔滨制药厂",
+}
+    ]
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    var url = app.globalData.dataSource;
+    wx.request({
+      url: url+'/api/medicine/lst',
+      method: 'GET', header: {
+        "content-type": "json"
+      },
+      success: function (res) {
+        that.setData({
+          mData: res.data
+        })
+      },
+    })
   },
 
   /**

@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    dataSource:"https://xiaoqtc.cn",
+    dataSource:"http://lo-xiaoqtc.cn/index.php",
   }
 })

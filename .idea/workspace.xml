@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="repair bug.">
+    <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Models/MedicineModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Models/NoticeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ponyxiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ponyxiao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MedicineController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MedicineController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/extend/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/extend/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,11 +139,13 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZfFsItOolbQwEfKyGvZigpEPpL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiaoe_admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiaoe/xiaoe_admin" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -160,6 +180,13 @@
       <workItem from="1586048606943" duration="9291000" />
       <workItem from="1586657269749" duration="3013000" />
       <workItem from="1586692908110" duration="3066000" />
+      <workItem from="1586740950657" duration="3293000" />
+      <workItem from="1586778799227" duration="1725000" />
+      <workItem from="1586996360982" duration="5225000" />
+      <workItem from="1587083904459" duration="613000" />
+      <workItem from="1587285666452" duration="1006000" />
+      <workItem from="1587387296113" duration="4988000" />
+      <workItem from="1587430979904" duration="8040000" />
     </task>
     <task id="LOCAL-00001" summary="create project.">
       <created>1585223875331</created>
@@ -203,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586666199918</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="设置CSRF白名单">
+      <created>1586741218771</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586741218771</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +262,7 @@
     <MESSAGE value="test program." />
     <MESSAGE value="database connection." />
     <MESSAGE value="repair bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="repair bug." />
+    <MESSAGE value="设置CSRF白名单" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置CSRF白名单" />
   </component>
 </project>

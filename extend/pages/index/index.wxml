@@ -1,16 +1,29 @@
 <!--index.wxml-->
 <view class="container">
+  <button class="notice_button" bindtap="addNotice">添加提醒</button>
   <view class="notice">
   <label>待提醒</label>
-  <block wx:for="{{medicineData}}" wx:for-item="medicine" wx:for-index="idx">
+  <block wx:for="{{nData.data}}" wx:for-item="notice" wx:for-index="idx">
     <view class="notice_desc">
-      <text>{{medicine.date}} {{medicine.mediName}} {{medicine.box}}</text>
+      <view>服药人：{{notice.member}}</view>
+      <view>药品名称：{{notice.mName}}</view>
+      <view>开始日期：{{notice.startDate}}</view>
+      <view>结束日期：{{notice.endDate}}</view>
+      <view>第一次服药时间：{{notice.firstTime}}</view>
+      <view>是否饭前服用：{{notice.isMeal}}</view>
     </view>
   </block>
   </view>
-  <view class="mianban">  
+  <view class="mianban">
+    <label>药品余量</label>
     <view class="press_data">
-      <label>药仓状态</label>
+      药仓a<progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
+    </view>
+    <view class="press_data">
+      药仓b<progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
+    </view>
+    <view class="press_data">
+      药仓c<progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
     </view>
     <view class="control_data">
       <view>

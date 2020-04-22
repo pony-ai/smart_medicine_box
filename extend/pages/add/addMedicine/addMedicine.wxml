@@ -1,0 +1,52 @@
+<!--pages/add/addMedicine/addMedicine.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <label>添加药品</label>
+  <view>
+    <label>已选药仓：{{box}}</label>
+    <input name="box" value="{{box}}" hidden="{{true}}"></input>
+  </view>
+  <view>
+    <label>药品名称</label>
+    <input name="mName" value="" placeholder="请输入药品名称" focus="true"></input>
+  </view>
+  <view>
+    <label>用法用量</label>
+    <picker name="mDoes" mode="multiSelector" value="{{multiIndex}}" range="{{multiArray}}" bindchange="bindMultiPickerChange">
+      <view class="picker">
+        当前选择：每天{{multiArray[0][multiIndex[0]]}}次 {{multiArray[1][multiIndex[1]]}}{{multiArray[2][multiIndex[2]]}}/次
+      </view>
+    </picker>
+  </view>
+  <view>
+    <label>有效日期</label>
+    <picker name="effectiveDate" mode="date" value="{{date}}" start="2015-01-01" end="2030-01-01" bindchange="bindDateChange">
+      <view class="picker">
+        当前选择: {{date}}
+      </view>
+    </picker>
+  </view>
+  <view>
+    <label>分类</label>
+    <picker name="cate" mode="selector" value="{{index}}" range="{{array}}" bindchange="bindPickerChange">
+      <view class="piker">
+        当前选择：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view>
+    <label>生产商</label>
+    <input name="producers" value="" placeholder="请输入生产商名称"></input>
+  </view>
+  <view>
+    <label>适应症</label>
+    <input name="indications" value="" placeholder="请输入适应症"></input>
+  </view>
+  <view>
+    <label>注意事项</label>
+    <input name="attention" value="" placeholder="请输入注意事项"></input>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

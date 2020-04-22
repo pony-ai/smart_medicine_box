@@ -1,0 +1,77 @@
+<!--pages/index/addNotice/addNotice.wxml-->
+<view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view>
+      <label>服药人</label>
+      <picker name="member" mode="selector" value="{{memIndex}}" range="{{member}}" bindchange="">
+        <view class="picker">
+        当前选择：{{member[memIndex]}}
+      </view>
+      </picker>
+    </view>
+    <view class="">
+      <label>药品名称</label>
+      <picker name="mName" mode="selector" value="{{medIndex}}" range="{{mData}}" range-key="id" bindchange="">
+        <view class="picker">
+        当前选择：{{mData[medIndex].id}}
+      </view>
+      </picker>
+    </view>
+    <view>
+      <label>开始日期</label>
+      <picker name="startDate" mode="date" value="{{startDate}}" start="2020-01-01" end="2050-09-01" bindchange="bindStartDateChange">
+        <view class="picker">
+          当前选择: {{startDate}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <label>结束日期</label>
+      <picker name="endDate" mode="date" value="{{endDate}}" start="2020-01-01" end="2050-09-01" bindchange="bindEndDateChange">
+        <view class="picker">
+          当前选择: {{endDate}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <label>用药频率</label>
+      <picker name="frequency" mode="selector" value="{{fIndex}}" range="{{frequency}}" bindchange="bindFrequencyChange">
+        <view class="picker">
+          当前选择: {{frequency[fIndex]}}
+        </view>
+      </picker>
+    </view>
+    <view class="" wx:if="{{showFirst}}">
+      <label>第一次</label>
+      <picker name="firstTime" mode="time" value="{{firstTime}}" bindchange="bindFirstTimeChange">
+        <view class="picker">
+          当前选择: {{firstTime}}
+        </view>
+      </picker>
+    </view>
+    <view class="" wx:if="{{showSecond}}">
+      <label>第二次</label>
+      <picker name="secondTime" mode="time" value="{{secondTime}}" bindchange="bindSecondTimeChange">
+        <view class="picker">
+          当前选择: {{secondTime}}
+        </view>
+      </picker>
+    </view>
+    <view class="" wx:if="{{showThird}}">
+      <label>第三次</label>
+      <picker name="thirdTime" mode="time" value="{{thirdTime}}" bindchange="bindThirdTimeChange">
+        <view class="picker">
+          当前选择: {{thirdTime}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <label>是否饭前服用</label>
+      <switch name="isMeal" color="#000000"></switch>
+    </view>
+    <view>
+      <button formType="submit">Submit</button>
+      <button formType="reset">Reset</button>
+    </view>
+  </form>
+</view>

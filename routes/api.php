@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::group(['prefix'=>'medicine'],function(){
+    Route::post('/add','MedicineController@addMedicine');
+    Route::get('/lst','MedicineController@showMedicine');
+});
+Route::group(['prefix'=>'notice'],function(){
+    Route::post('/add','NoticeController@addNotice');
+    Route::get('/lst','NoticeController@showNotice');
+});

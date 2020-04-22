@@ -1,4 +1,25 @@
 <!--pages/add/add.wxml-->
-<view class="add">
-  <button class="scanCode" bindtap="scanCode">绑定药仓</button>
+<view>
+  <block wx:for="{{mData}}" wx:for-item="medicine" wx:for-index="idx">
+    <view class="medicine">
+      <view>
+        药品名称：{{medicine.mName}}
+      </view>
+      <view>
+        药品分类：{{medicine.cate}}
+      </view>
+      <view>
+        用法用量：{{medicine.mDoes}}
+      </view>
+      <view>
+        适应症：{{medicine.indications}}
+      </view>
+      <view>
+        有效日期：{{medicine.effectiveDate}}
+      </view>
+    </view>
+  </block>
+</view>
+<view class="add_btn">
+  <button class="scanCode" bindtap="scanCode">扫码填药</button>
 </view>

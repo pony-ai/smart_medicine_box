@@ -14,6 +14,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index');
-Route::group(['prefix'=>'medicine'],function(){
-    Route::post('/add','MedicineController@addMedicine');
-});

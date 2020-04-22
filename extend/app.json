@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index/addNotice/addNotice",
+    "pages/member/member",
     "pages/add/add",
     "pages/add/addMedicine/addMedicine",
     "pages/my/my",
@@ -17,6 +19,10 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "档案"
       },
       {
         "pagePath": "pages/add/add",

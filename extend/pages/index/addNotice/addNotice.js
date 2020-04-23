@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    member:['pony','rose'],
+    member:null,
     memIndex:'0',
     mData:null,
     medIndex:'0',
@@ -37,7 +37,28 @@ Page({
         that.setData({
           mData: res.data
         })
+      }
+    }),
+    wx.request({
+      url: url + '/api/member/lst',
+      method: 'GET', header: {
+        "content-type": "json"
       },
+      success: function (res) {
+        that.setData({
+          member: res.data
+        })
+      }
+    })
+  },
+  bindMemberChange:function(e){
+    this.setData({
+      memIndex:e.detail.value
+    })
+  },
+  bindMedicineChange: function (e) {
+    this.setData({
+      medIndex: e.detail.value
     })
   },
   bindStartDateChange: function (e) {
@@ -116,6 +137,11 @@ Page({
       success: function (res) {
         wx.switchTab({
           url: '../index',
+          succsee: function () {
+            var page = getCurrentPages().pop();
+            if (page == undefined || page == null) return;
+            page.onLoad();
+          },
           fail: function () {
             console.info("跳转失败")
           }

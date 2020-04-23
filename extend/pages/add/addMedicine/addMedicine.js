@@ -67,6 +67,11 @@ Page({
     // 测试代码
     wx.switchTab({
       url: '../add',
+      succsee: function () {
+        var page = getCurrentPages().pop();
+        if (page == undefined || page == null) return;
+        page.onLoad();
+      },
       fail: function () {
         console.info("跳转失败")
       }

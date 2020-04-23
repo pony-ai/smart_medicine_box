@@ -25,3 +25,7 @@ Route::group(['prefix'=>'notice'],function(){
     Route::post('/add','NoticeController@addNotice');
     Route::get('/lst','NoticeController@showNotice');
 });
+Route::group(['prefix'=>'member'],function (){
+    Route::post('/add','MemberController@addMember');
+    Route::get('/lst','MemberController@showMember');
+});

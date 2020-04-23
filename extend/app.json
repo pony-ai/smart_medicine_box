@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/index/addNotice/addNotice",
     "pages/member/member",
+    "pages/member/addMember/addMember",
     "pages/add/add",
     "pages/add/addMedicine/addMedicine",
     "pages/my/my",

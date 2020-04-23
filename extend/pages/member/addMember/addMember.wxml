@@ -1,0 +1,29 @@
+<!--pages/member/addmember/addMember.wxml-->
+<view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view>
+      <label>姓名</label>
+      <input name="name" type="text"></input>
+    </view>
+    <view>
+      <label>性别</label>
+      <radio-group name="gender" class="radio-group" bindchange="radioChange">
+          <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+              <text>{{item.value}}</text>
+          </radio>
+      </radio-group>
+    </view>
+    <view>
+      <label>年龄</label>
+      <input name="age" type="number"></input>
+    </view>
+    <view>
+      <label>备注</label>
+      <input name="note" type="text"></input>
+    </view>
+    <view>
+      <button formType="submit">Submit</button>
+      <button formType="reset">Reset</button>
+    </view>
+  </form>
+</view>

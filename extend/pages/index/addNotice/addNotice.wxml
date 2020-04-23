@@ -3,15 +3,15 @@
   <form bindsubmit="formSubmit" bindreset="formReset">
     <view>
       <label>服药人</label>
-      <picker name="member" mode="selector" value="{{memIndex}}" range="{{member}}" bindchange="">
+      <picker name="member" mode="selector" value="{{memIndex}}" range="{{member.data}}" range-key ="name" bindchange="bindMemberChange">
         <view class="picker">
-        当前选择：{{member[memIndex]}}
+        当前选择：{{member.data[memIndex].name}}
       </view>
       </picker>
     </view>
     <view class="">
       <label>药品名称</label>
-      <picker name="mName" mode="selector" value="{{medIndex}}" range="{{mData}}" range-key="id" bindchange="">
+      <picker name="mName" mode="selector" value="{{medIndex}}" range="{{mData}}" range-key="id" bindchange="bindMedicineChange">
         <view class="picker">
         当前选择：{{mData[medIndex].id}}
       </view>

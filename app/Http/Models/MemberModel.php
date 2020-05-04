@@ -13,10 +13,26 @@ class MemberModel extends Model
     protected $table = 'member';
 
     public function add(array $data){
-        return DB::connection($this->connection)->table($this->table)->insert($data);
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->insert($data);
     }
 
     public function lst(){
-        return DB::connection($this->connection)->table($this->table)->get();
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->orderBy('id','asc')
+            ->get()
+            ->toArray();
+    }
+
+    public function getAllMemberName()
+    {
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->select('name')
+            ->orderBy('id','asc')
+            ->get()
+            ->toArray();
     }
 }

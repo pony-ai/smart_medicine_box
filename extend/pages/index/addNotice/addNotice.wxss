@@ -1,1 +1,12 @@
 /* pages/index/addNotice/addNotice.wxss */
+.view-notice{
+  margin: 10% 10%;
+}
+.view-notice-item{
+  margin-bottom: 5%;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+.view-notice-button{
+  text-align: center;
+}

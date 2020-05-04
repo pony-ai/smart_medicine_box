@@ -1,15 +1,19 @@
 <!--pages/add/add.wxml-->
-<view>
+<view class="view-medicine">
+  <scroll-view class="scroll-view-medicine" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
   <block wx:for="{{mData}}" wx:for-item="medicine" wx:for-index="idx">
-    <view class="medicine">
+    <view class="view-medicine-item">
       <view>
         药品名称：{{medicine.mName}}
       </view>
-      <view>
-        药品分类：{{medicine.cate}}
+      <view wx:if="{{medicine.cate != 1}}">
+        药品分类：处方药
+      </view>
+      <view wx:else>
+        药品分类：非处方药
       </view>
       <view>
-        用法用量：{{medicine.mDoes}}
+        用法用量：每天{{medicine.mDoes[0]}}次 {{medicine.mDoes[1]}}{{medicine.mDoes[2]}}/次
       </view>
       <view>
         适应症：{{medicine.indications}}
@@ -17,8 +21,16 @@
       <view>
         有效日期：{{medicine.effectiveDate}}
       </view>
+      <view>
+        所属药仓：{{medicine.box}}
+      </view>
+      <form bindsubmit="formSubmit">
+        <input name="id" value="{{medicine.id}}" hidden="true"></input>
+        <button size="mini" type="primary" form-type="submit">删除</button>
+      </form>
     </view>
   </block>
+  </scroll-view>
 </view>
 <view class="add_btn">
   <button class="scanCode" bindtap="scanCode">扫码填药</button>

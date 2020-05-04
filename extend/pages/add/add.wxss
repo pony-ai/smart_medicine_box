@@ -1,10 +1,16 @@
 /* pages/add/add.wxss */
-/* 底部按钮 */
-.medicine{
-  margin-bottom: 40rpx;
+.view-medicine{
+  padding: 5%;
+}
+.view-medicine-item{
+  margin-bottom: 5%;
   border-bottom-style: solid;
   border-bottom-color: #000000
 }
+.scroll-view-medicine{
+  height: 1050rpx;
+}
+/* 底部按钮 */
 .add_btn{
   width: 100%;
   position: fixed;

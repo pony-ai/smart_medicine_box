@@ -1,7 +1,7 @@
 <!--pages/index/addNotice/addNotice.wxml-->
-<view>
+<view class="view-notice">
   <form bindsubmit="formSubmit" bindreset="formReset">
-    <view>
+    <view class="view-notice-item">
       <label>服药人</label>
       <picker name="member" mode="selector" value="{{memIndex}}" range="{{member.data}}" range-key ="name" bindchange="bindMemberChange">
         <view class="picker">
@@ -9,15 +9,15 @@
       </view>
       </picker>
     </view>
-    <view class="">
+    <view class="view-notice-item">
       <label>药品名称</label>
-      <picker name="mName" mode="selector" value="{{medIndex}}" range="{{mData}}" range-key="id" bindchange="bindMedicineChange">
+      <picker name="mName" mode="selector" value="{{medIndex}}" range="{{mData}}" range-key="mName" bindchange="bindMedicineChange">
         <view class="picker">
-        当前选择：{{mData[medIndex].id}}
+        当前选择：{{mData[medIndex].mName}}
       </view>
       </picker>
     </view>
-    <view>
+    <view class="view-notice-item">
       <label>开始日期</label>
       <picker name="startDate" mode="date" value="{{startDate}}" start="2020-01-01" end="2050-09-01" bindchange="bindStartDateChange">
         <view class="picker">
@@ -25,7 +25,7 @@
         </view>
       </picker>
     </view>
-    <view>
+    <view class="view-notice-item">
       <label>结束日期</label>
       <picker name="endDate" mode="date" value="{{endDate}}" start="2020-01-01" end="2050-09-01" bindchange="bindEndDateChange">
         <view class="picker">
@@ -33,7 +33,7 @@
         </view>
       </picker>
     </view>
-    <view>
+    <view class="view-notice-item">
       <label>用药频率</label>
       <picker name="frequency" mode="selector" value="{{fIndex}}" range="{{frequency}}" bindchange="bindFrequencyChange">
         <view class="picker">
@@ -41,7 +41,7 @@
         </view>
       </picker>
     </view>
-    <view class="" wx:if="{{showFirst}}">
+    <view class="view-notice-item" wx:if="{{showFirst}}">
       <label>第一次</label>
       <picker name="firstTime" mode="time" value="{{firstTime}}" bindchange="bindFirstTimeChange">
         <view class="picker">
@@ -49,7 +49,7 @@
         </view>
       </picker>
     </view>
-    <view class="" wx:if="{{showSecond}}">
+    <view class="view-notice-item" wx:if="{{showSecond}}">
       <label>第二次</label>
       <picker name="secondTime" mode="time" value="{{secondTime}}" bindchange="bindSecondTimeChange">
         <view class="picker">
@@ -57,7 +57,7 @@
         </view>
       </picker>
     </view>
-    <view class="" wx:if="{{showThird}}">
+    <view class="view-notice-item" wx:if="{{showThird}}">
       <label>第三次</label>
       <picker name="thirdTime" mode="time" value="{{thirdTime}}" bindchange="bindThirdTimeChange">
         <view class="picker">
@@ -65,13 +65,13 @@
         </view>
       </picker>
     </view>
-    <view>
+    <view class="view-notice-item">
       <label>是否饭前服用</label>
       <switch name="isMeal" color="#000000"></switch>
     </view>
-    <view>
-      <button formType="submit">Submit</button>
-      <button formType="reset">Reset</button>
+    <view class="view-notice-button">
+      <button size="mini" type="primary" formType="submit">Submit</button>
+      <button size="mini" type="primary" formType="reset" style="margin-left:10%">Reset</button>
     </view>
   </form>
 </view>

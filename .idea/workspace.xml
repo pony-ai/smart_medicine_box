@@ -2,21 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Models/MemberModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.wxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/SendNotice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TakeMedicineNotice.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MedicineController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MedicineController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/MedicineModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/MedicineModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/MemberModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/MemberModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Models/NoticeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/NoticeModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extend/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/extend/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extend/pages/add/addMedicine/addMedicine.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/addMedicine/addMedicine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/addMedicine/addMedicine.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/addMedicine/addMedicine.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/addMedicine/addMedicine.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/addMedicine/addMedicine.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extend/pages/index/addNotice/addNotice.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/addNotice/addNotice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extend/pages/index/addNotice/addNotice.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/addNotice/addNotice.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/addNotice/addNotice.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/addNotice/addNotice.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extend/pages/member/member.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/member/member.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extend/pages/member/member.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/member/member.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extend/pages/member/member.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/member/member.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -184,6 +199,14 @@
       <workItem from="1587285666452" duration="1006000" />
       <workItem from="1587387296113" duration="4988000" />
       <workItem from="1587430979904" duration="14362000" />
+      <workItem from="1587636372630" duration="702000" />
+      <workItem from="1587654338749" duration="5133000" />
+      <workItem from="1587730887550" duration="7937000" />
+      <workItem from="1587775955138" duration="4325000" />
+      <workItem from="1587861768041" duration="5908000" />
+      <workItem from="1588118822155" duration="91000" />
+      <workItem from="1588119039033" duration="1443000" />
+      <workItem from="1588559403532" duration="3572000" />
     </task>
     <task id="LOCAL-00001" summary="create project.">
       <created>1585223875331</created>
@@ -241,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587516300646</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add MemberController.">
+      <created>1587636441534</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587636441534</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +299,7 @@
     <MESSAGE value="repair bug." />
     <MESSAGE value="设置CSRF白名单" />
     <MESSAGE value="Add NoticeController." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add NoticeController." />
+    <MESSAGE value="Add MemberController." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add MemberController." />
   </component>
 </project>

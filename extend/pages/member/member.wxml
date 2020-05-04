@@ -1,12 +1,17 @@
 <!--pages/member/member.wxml-->
-<block wx:for="{{member.data}}" wx:for-item="member" wx:for-index="idx">
-  <view>
-    <view>昵称：{{member.name}}</view>
-    <view>性别：{{member.gender}}</view>
-    <view>年龄：{{member.age}}</view>
-    <view>备注：{{member.note}}</view>
-  </view>
-</block>
+<view class="view-number">
+  <scroll-view class="scroll-view-member" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <block wx:for="{{member.data}}" wx:for-item="member" wx:for-index="idx">
+      <view class="view-member-item">
+        <view>昵称：{{member.name}}</view>
+        <view wx:if="{{member.gender != 1}}">性别：女</view>
+        <view wx:else>性别：男</view>
+        <view>年龄：{{member.age}}</view>
+        <view>备注：{{member.note}}</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
 <view class="add_member">
   <button class="button_member" bindtap="buttonMember">添加成员</button>
 </view>

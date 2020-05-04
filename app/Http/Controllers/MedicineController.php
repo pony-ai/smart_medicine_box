@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class MedicineController
 {
+    const UNIT = ['粒','片','丸','瓶','袋'];
     protected $medicine;
 
     public function __construct()
@@ -39,6 +40,11 @@ class MedicineController
      */
     public function showMedicine(){
         $data = $this->medicine->lst();
+        foreach ($data as $key=>$val){
+            $tmp = explode(',',json_decode(json_encode($val->mDoes), true));
+            $tmp[2] = self::UNIT[$tmp[2]];
+            $val->mDoes = $tmp;
+        }
         return json_encode($data);
     }
 }

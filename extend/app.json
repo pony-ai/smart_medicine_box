@@ -16,22 +16,32 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "color":"#dbdbdb",
+    "selectedColor":"#000000",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"pages/images/ican/unselected/shouye.png",
+        "selectedIconPath":"pages/images/ican/selected/shouye.png"
       },
       {
         "pagePath": "pages/member/member",
-        "text": "档案"
+        "text": "档案",
+        "iconPath": "pages/images/ican/unselected/dangan.png",
+        "selectedIconPath": "pages/images/ican/selected/dangan.png"
       },
       {
         "pagePath": "pages/add/add",
-        "text": "存药"
+        "text": "存药",
+        "iconPath": "pages/images/ican/unselected/yao.png",
+        "selectedIconPath": "pages/images/ican/selected/yao.png"
       },
       {
         "pagePath": "pages/my/my",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "pages/images/ican/unselected/icon03.png",
+        "selectedIconPath": "pages/images/ican/selected/icon03.png"
       }
     ]
   },

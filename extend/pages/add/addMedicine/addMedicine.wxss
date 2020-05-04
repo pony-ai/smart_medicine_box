@@ -1,1 +1,16 @@
 /* pages/add/addMedicine/addMedicine.wxss */
+.view-medicine{
+  margin: 10% 10%;
+}
+.view-medicine-head{
+  text-align: center;
+  font-size: 22px;
+}
+.view-medicine-item{
+  margin-bottom: 5%;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+.view-medicine-button{
+  text-align: center;
+}

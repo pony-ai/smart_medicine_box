@@ -1,4 +1,15 @@
 /* pages/member/member.wxss */
+.view-number{
+  padding: 5%;
+}
+.scroll-view-member{
+  height: 1050rpx;
+}
+.view-member-item{
+  margin-bottom: 5%;
+  border-bottom-style: solid;
+  border-bottom-color:#000000; 
+}
 .add_member{
   width: 100%;
   position: fixed;

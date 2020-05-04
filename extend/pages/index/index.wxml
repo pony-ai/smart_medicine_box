@@ -1,34 +1,54 @@
 <!--index.wxml-->
 <view class="container">
-  <button class="notice_button" bindtap="addNotice">添加提醒</button>
-  <view class="notice">
-  <label>待提醒</label>
-  <block wx:for="{{nData.data}}" wx:for-item="notice" wx:for-index="idx">
-    <view class="notice_desc">
-      <view>服药人：{{notice.member}}</view>
-      <view>药品名称：{{notice.mName}}</view>
-      <view>开始日期：{{notice.startDate}}</view>
-      <view>结束日期：{{notice.endDate}}</view>
-      <view>第一次服药时间：{{notice.firstTime}}</view>
-      <view>是否饭前服用：{{notice.isMeal}}</view>
+  <view class="view-notice">
+    <view class="view-notice-head">
+      <label>待提醒</label>
+      <view class="view-notice-button">
+        <button size="mini" class="button-notice" bindtap="addNotice" style="font-size:16px;">+</button>
+      </view>
     </view>
-  </block>
+    <scroll-view class="scroll_view_notice" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <block wx:for="{{nData.data}}" wx:for-item="notice" wx:for-index="idx">
+        <view class="view-notice-item">
+          <view>服药人：{{notice.member}}</view>
+          <view>药品名称：{{notice.mName}}</view>
+          <view>所属药仓：{{notice.box}}</view>
+          <view>开始日期：{{notice.startDate}}</view>
+          <view>结束日期：{{notice.endDate}}</view>
+          <view>第一次服药时间：{{notice.firstTime}}</view>
+          <view wx:if="{{notice.secondTime != 'undefined'}}">第二次服药时间：{{notice.secondTime}}</view>
+          <view wx:if="{{notice.thirdTime != 'undefined'}}">第三次服药时间：{{notice.thirdTime}}</view>
+          <view wx:if="{{notice.isMeal != 1}}">是否饭前服用：否</view>
+          <view wx:else>是否饭前服用：是</view>
+          <view class="view-control">
+          <form bindsubmit="formSubmit">
+            <input name="id" value="{{notice.id}}" hidden="true"></input>
+            <button size="mini" type="primary" form-type="submit">删除</button>
+            <button size="mini" type="primary" form-type="submit" style="margin-left:4%">打开药箱</button>
+          </form>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
   </view>
-  <view class="mianban">
-    <label>药品余量</label>
+  <view class="view-rest">
+    <label style="font-size:18px;">药品余量</label>
     <view class="press_data">
-      药仓a<progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
+      药仓a
+      <progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
     </view>
     <view class="press_data">
-      药仓b<progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
+      药仓b
+      <progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
     </view>
     <view class="press_data">
-      药仓c<progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
+      药仓c
+      <progress percent="{{box.percent}}" show-info="true" stroke-width="8" active="flase" color="#000000"></progress>
     </view>
-    <view class="control_data">
+    <!-- <view class="control_data">
       <view>
         <label>控制指令</label>
       </view>
-    </view>
+    </view> -->
   </view>
 </view>

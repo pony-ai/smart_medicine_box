@@ -113,7 +113,7 @@ Page({
     this.setData({
       thirdTime: e.detail.value
     })
-  }, 
+  },
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
     var url = app.globalData.dataSource;

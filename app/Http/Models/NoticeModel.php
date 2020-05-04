@@ -14,14 +14,33 @@ class NoticeModel extends Model
 
     public function add(array $arr)
     {
-        return DB::connection($this->connection)->table($this->table)->insert($arr);
-//        return $this->save($arr);
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->insert($arr);
     }
 
     public function lst()
     {
         return DB::connection($this->connection)
             ->table($this->table)
-            ->get();
+            ->get()
+            ->toArray();
+    }
+
+    public function del($id)
+    {
+         return DB::connection($this->connection)
+            ->table($this->table)
+            ->where('id',$id)
+            ->delete();
+    }
+
+    public function getNoticeDate()
+    {
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->select('startDate','endDate','firstTime','secondTime','thirdTime')
+            ->get()
+            ->toArray();
     }
 }

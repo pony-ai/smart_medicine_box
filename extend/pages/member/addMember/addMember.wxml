@@ -1,11 +1,11 @@
 <!--pages/member/addmember/addMember.wxml-->
-<view>
+<view class="view-add-number">
   <form bindsubmit="formSubmit" bindreset="formReset">
-    <view>
+    <view class="view-item">
       <label>姓名</label>
       <input name="name" type="text"></input>
     </view>
-    <view>
+    <view class="view-item">
       <label>性别</label>
       <radio-group name="gender" class="radio-group" bindchange="radioChange">
           <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
@@ -13,17 +13,17 @@
           </radio>
       </radio-group>
     </view>
-    <view>
+    <view class="view-item">
       <label>年龄</label>
       <input name="age" type="number"></input>
     </view>
-    <view>
+    <view class="view-item">
       <label>备注</label>
       <input name="note" type="text"></input>
     </view>
-    <view>
-      <button formType="submit">Submit</button>
-      <button formType="reset">Reset</button>
+    <view class="view-add-button">
+      <button size="mini" formType="submit">Submit</button>
+      <button size="mini" formType="reset" style="margin-left:10%;">Reset</button>
     </view>
   </form>
 </view>

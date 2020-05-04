@@ -30,11 +30,6 @@ Page({
       success: function (res) {
         wx.switchTab({
           url: '../member',
-          succsee:function(){
-            var page = getCurrentPages().pop();
-            if (page == undefined || page == null) return;
-            page.onLoad();
-          },
           fail: function () {
             console.info("跳转失败")
           }

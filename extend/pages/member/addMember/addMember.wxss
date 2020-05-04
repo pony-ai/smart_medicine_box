@@ -1,1 +1,12 @@
 /* pages/member/addmember/addMember.wxss */
+.view-add-number{
+  margin: 10% 10%;
+}
+.view-item{
+  margin-bottom: 2%;
+  border-bottom-style: solid;
+  border-bottom-color: #000000;
+}
+.view-add-button{
+  text-align: center;
+}

@@ -15,10 +15,33 @@ class MedicineModel extends Model
 
     public function add($arr)
     {
-        return DB::connection($this->connection)->table($this->table)->insert($arr);
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->insert($arr);
     }
 
     public function lst(){
-        return DB::connection($this->connection)->table($this->table)->get();
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->get()
+            ->toArray();
+    }
+
+    public function getMedicineName()
+    {
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->select('mName','box')
+            ->get()
+            ->toArray();
+    }
+
+    public function getMedicineBox($data)
+    {
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->select('box')
+            ->where('id',$data)
+            ->first();
     }
 }

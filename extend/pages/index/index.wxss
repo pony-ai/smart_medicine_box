@@ -1,33 +1,75 @@
 /**index.wxss**/
+
 .container {
   align-items: center;
   padding: 10rpx 0;
 }
- .notice {
+
+.view-notice {
   display: flex;
   flex-direction: column;
   width: 90%;
- }
+  /* padding: 5%; */
+}
 
- .notice_desc {
-  padding: 20rpx;
-  border-bottom-color:black;
+.view-notice-head {
+  /* padding-left: 115px; */
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.view-notice-button {
+  position: fixed;
+  right: 5%;
+  top: 2%;
+}
+
+.button-notice {
+  margin: 0rpx;
+  padding: 0rpx;
+  width: 50px;
+  height: 35px;
+  border-radius: 50px;
+  line-height: 30px;
+  font-size: 13pt;
+  background: #000000;
+  color: #fff;
+}
+
+.scroll_view_notice {
+  height: 820rpx;
+}
+
+.view_notice_button {
+  margin-left: 80px;
+  margin-top: 5px;
+}
+
+.view-notice-item {
+  margin-bottom: 5%;
+  border-bottom-color: black;
   border-bottom-style: solid;
- }
+}
+.view-control{
+  /* text-align: center; */
+}
 
- .mianban{
+.view-rest {
+  position: fixed;
+  bottom: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20rpx;
   width: 90%;
- }
-
- .press_data{
+}
+.press_data {
   width: 90%;
- }
+}
 
- .control_data{
-  margin: 20rpx; 
+.control_data {
+  margin: 20rpx;
   padding: 20rpx;
- }
+}

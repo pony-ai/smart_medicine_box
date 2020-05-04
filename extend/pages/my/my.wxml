@@ -7,4 +7,7 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+  <view class="records">
+    服药记录
+  </view>
 </view>

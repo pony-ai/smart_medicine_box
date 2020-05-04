@@ -22,3 +22,8 @@
 .usermotto {
   margin-top: 200px;
 }
+.records{
+  width: 90%;
+  margin-top: 200rpx;
+  text-align: center;
+}

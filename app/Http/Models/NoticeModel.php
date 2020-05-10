@@ -39,8 +39,18 @@ class NoticeModel extends Model
     {
         return DB::connection($this->connection)
             ->table($this->table)
-            ->select('startDate','endDate','firstTime','secondTime','thirdTime')
+            ->select('firstTime','secondTime','thirdTime')
             ->get()
             ->toArray();
+    }
+
+    public function getRecords($data)
+    {
+        return DB::connection($this->connection)
+            ->table($this->table)
+            ->select('member','mName')
+            ->where('box',$data)
+            ->orderByDesc('id')
+            ->first();
     }
 }

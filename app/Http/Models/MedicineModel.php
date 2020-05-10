@@ -32,6 +32,7 @@ class MedicineModel extends Model
         return DB::connection($this->connection)
             ->table($this->table)
             ->select('mName','box')
+            ->orderBy('id','asc')
             ->get()
             ->toArray();
     }
@@ -43,5 +44,10 @@ class MedicineModel extends Model
             ->select('box')
             ->where('id',$data)
             ->first();
+        /*var_dump(DB::connection($this->connection)
+            ->table($this->table)
+            ->select('box')
+            ->where('id',$data)
+            ->first());die;*/
     }
 }

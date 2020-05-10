@@ -30,3 +30,10 @@ Route::group(['prefix'=>'notice'],function(){
     Route::get('/lst','NoticeController@showNotice');
     Route::get('/del/{id}','NoticeController@delNotice');
 });
+
+Route::group(['prefix'=>'transbigiot'],function(){
+    Route::get('/getPressure','TransBigiotController@getPressure');
+    Route::get('/getRecords','TransBigiotController@getRecords');
+    Route::get('/openBox','TransBigiotController@openBox');
+    Route::get('/isNotice','TransBigiotController@isNotice');
+});

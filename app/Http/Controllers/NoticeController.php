@@ -38,7 +38,8 @@ class NoticeController
         }
         $noticeData['secondTime'] = $request->input('secondTime',0);
         $noticeData['thirdTime'] = $request->input('thirdTime',0);
-        $noticeData['box'] = $this->medicine->getMedicineBox($noticeData['mName'])->box;
+
+        $noticeData['box'] = $this->medicine->getMedicineBox($noticeData['mName']+1)->box;
         $res = $this->notice->add($noticeData);
         if ($res){
             return json_encode(['code'=>1001,'msg'=>'add notice success']);

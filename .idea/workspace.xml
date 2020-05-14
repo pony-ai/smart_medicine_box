@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TransBigiotController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Models/RecordsModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extend/pages/images/oo4730E9je7L9FhkndFe7LJxWESw.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ponyxiao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ponyxiao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="be6ca21c-b409-41ae-882b-80c97416f795" name="Default Changelist" comment="Add bigiot module.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NoticeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TakeMedicineNotice.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TakeMedicineNotice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/MedicineModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/MedicineModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Models/NoticeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Models/NoticeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TransBigiotController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TransBigiotController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/extend/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/add/addMedicine/addMedicine.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/add/addMedicine/addMedicine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/addNotice/addNotice.json" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/addNotice/addNotice.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/member/addMember/addMember.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.js" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend/pages/my/my.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/extend/pages/my/my.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -194,7 +192,8 @@
       <workItem from="1588118822155" duration="91000" />
       <workItem from="1588119039033" duration="1443000" />
       <workItem from="1588559403532" duration="3910000" />
-      <workItem from="1588724550018" duration="101481000" />
+      <workItem from="1588724550018" duration="104749000" />
+      <workItem from="1589443341790" duration="3323000" />
     </task>
     <task id="LOCAL-00001" summary="create project.">
       <created>1585223875331</created>
@@ -266,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588595654538</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add bigiot module.">
+      <created>1589114651586</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589114651587</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +302,7 @@
     <MESSAGE value="Add NoticeController." />
     <MESSAGE value="Add MemberController." />
     <MESSAGE value="优化界面；新增删除功能；完善添加提醒逻辑等；" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化界面；新增删除功能；完善添加提醒逻辑等；" />
+    <MESSAGE value="Add bigiot module." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bigiot module." />
   </component>
 </project>

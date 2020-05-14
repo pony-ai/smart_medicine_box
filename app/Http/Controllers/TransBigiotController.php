@@ -69,6 +69,56 @@ class TransBigiotController
     }
 
     /**
+     * 获取温度
+     * @return mixed
+     * @Author ponyxiao
+     * @Date 2020/5/14 17:28
+     */
+    public function getTemp(){
+        $params = [
+            'access_token'=>$this->access_token,
+            'id'=>self::TEMP_ID
+        ];
+        $response = $this->client->request('GET',self::HISTORY_DATA_API,[
+            'query'=>$params,
+            'headers'=>[
+                'Content-Type' => 'application/json;charset=UTF-8'
+            ],
+            //上线后要注释掉verify字段
+            'verify' => false,
+        ]);
+        $body = $response->getBody()->getContents();
+        //去点非法字符\ufeff
+        $tmp = substr($body,3);
+        $res = json_decode($tmp,true);
+        $now = count($res);
+        $tempCurrent = $res[$now-1];
+        return $tempCurrent;
+    }
+
+
+    public function getHum(){
+        $params = [
+            'access_token'=>$this->access_token,
+            'id'=>self::HUM_ID
+        ];
+        $response = $this->client->request('GET',self::HISTORY_DATA_API,[
+            'query'=>$params,
+            'headers'=>[
+                'Content-Type' => 'application/json;charset=UTF-8'
+            ],
+            //上线后要注释掉verify字段
+            'verify' => false,
+        ]);
+        $body = $response->getBody()->getContents();
+        //去点非法字符\ufeff
+        $tmp = substr($body,3);
+        $res = json_decode($tmp,true);
+        $now = count($res);
+        $humCurrent = $res[$now-1];
+        return $humCurrent;
+    }
+    /**
      * 获取服药记录
      * @return array|string
      * @Author ponyxiao
@@ -93,7 +143,7 @@ class TransBigiotController
 
         $item = 0;
         for ($i=0;$i<count($recordsData);$i++){
-            if(substr($recordsData[$i]['value'],-1)==1){
+            if(substr($recordsData[$i]['value'],-1)==0){
                 $item = $i;
                 break;
             }

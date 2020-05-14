@@ -33,6 +33,8 @@ Route::group(['prefix'=>'notice'],function(){
 
 Route::group(['prefix'=>'transbigiot'],function(){
     Route::get('/getPressure','TransBigiotController@getPressure');
+    Route::get('/getTemp','TransBigiotController@getTemp');
+    Route::get('/getHum','TransBigiotController@getHum');
     Route::get('/getRecords','TransBigiotController@getRecords');
     Route::get('/openBox','TransBigiotController@openBox');
     Route::get('/isNotice','TransBigiotController@isNotice');
